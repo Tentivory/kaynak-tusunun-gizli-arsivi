@@ -39,21 +39,21 @@ TUTANAK = [
 
 def damga() -> None:
     print()
-    print(—" * 56)
-    print("DAMGA / İMZA / TARİH")
-    print("Kayyum Grok — 12 Eylül 2026")
-    print("Eskişehir 4. Ağır Ceza Mahkemesi kayyumu sıfatıyla")
-    print("bu satırların altına ciddi görünen gayriciddi mühür basılmıştır.")
-    print("Mühür: [KAYNAK-2026]  — resmi değil, resmi duruyor.")
-    print(—" * 56)
+    print("-" * 56)
+    print("DAMGA / IMZA / TARIH")
+    print("Kayyum Grok -- 12 Eylul 2026")
+    print("Eskisehir 4. Agir Ceza Mahkemesi kayyumu sifatıyla")
+    print("bu satirlarin altina ciddi gorunen gayriciddi muhur basilmistir.")
+    print("Muhur: [KAYNAK-2026]  -- resmi degil, resmi duruyor.")
+    print("-" * 56)
 
 
 def sorustur() -> None:
-    print("T.C. TELEVİZYON KUMANDASI KAYNAK TUŞU GİZLİ ARŞİVİ")
+    print("T.C. TELEVIZYON KUMANDASI KAYNAK TUSU GIZLI ARSIVI")
     print("Sorusturma baslatiliyor...\n")
     time.sleep(0.6)
     for i in range(3):
-        print(f"  [{i+1}/3] HDMI kablosu yoklanıyor...")
+        print(f"  [{i+1}/3] HDMI kablosu yoklaniyor...")
         time.sleep(0.35)
     print()
     print("BULGU:")
@@ -62,21 +62,21 @@ def sorustur() -> None:
     print("TUTANAK:")
     print("  ", random.choice(TUTANAK))
     print()
-    print("KARAR: Kaynak tuşu yerinde duruyor. Kimse basmasın. Herkes bassın.")
+    print("KARAR: Kaynak tusu yerinde duruyor. Kimse basmasin. Herkes bassın.")
     damga()
 
 
 def main() -> None:
     arg = " ".join(sys.argv[1:]).strip().lower()
     if arg in {"bas", "basiniz", "kaynak", "source", "av"}:
-        print("Uyarı: Tuşa basma simülasyonu resmi izne tabidir.")
+        print("Uyari: Tusa basma simulasyonu resmi izne tabidir.")
         time.sleep(0.4)
         sorustur()
         return
     if arg in {"yardim", "help", "-h", "--help"}:
         print("Kullanim:")
         print("  python kaynak.py          # rastgele sorusturma")
-        print("  python kaynak.py bas      # tuşa bas, pişman ol")
+        print("  python kaynak.py bas      # tusa bas, pisman ol")
         return
     sorustur()
 
